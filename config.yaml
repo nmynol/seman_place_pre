@@ -1,0 +1,63 @@
+workers: 4
+batch_size: 58
+embedding_dim: 300
+val_freq: 1
+save_freq: 1
+board_freq: 10
+epoch: 500
+seed: 2333
+
+
+lr_text: 0.001
+lr_img: 0.001
+lr_user: 0.001
+lr_img_user: 0.001
+lr_fusion: 0.0003
+
+board_path: "./board/"
+text_save_path: "./param/text/"
+img_save_path: "./param/img/"
+user_save_path: "./param/user/"
+img_user_save_path: "./param/img_user/"
+fusion_save_path: "./param/fusion/"
+
+embed_dim: 300
+hidden_size: 300
+num_layers: 2
+class_num: 8
+kernel_num: 100
+kernel_sizes: '1'
+dropout: 0.75
+
+train:
+    home_data: "./alldata/train/home.txt"
+    work_data: "./alldata/train/work.txt"
+    school_data: "./alldata/train/school.txt"
+    restaurant_data: "./alldata/train/restaurant.txt"
+    shopping_data: "./alldata/train/shopping.txt"
+    cinema_data: "./alldata/train/cinema.txt"
+    sports_data: "./alldata/train/sport.txt"
+    travel_data: "./alldata/train/travel.txt"
+
+val:
+    home_data: "./alldata/test/home.txt"
+    work_data: "./alldata/test/work.txt"
+    school_data: "./alldata/test/school.txt"
+    restaurant_data: "./alldata/test/restaurant.txt"
+    shopping_data: "./alldata/test/shopping.txt"
+    cinema_data: "./alldata/test/cinema.txt"
+    sports_data: "./alldata/test/sport.txt"
+    travel_data: "./alldata/test/travel.txt"
+
+#embed_dim: 300)
+#class_num: 8
+#kernel_num: 100
+#kernel_sizes: 1
+#wide_conv: True
+#init_weight: True
+#init_weight_value: 2.0
+#cuda: True
+#dropout: 0.75
+#dropout_embed: 0.75
+#batch_normalizations: False
+#batch_norm_affine: False
